@@ -1,0 +1,37 @@
+.logoWrapper {
+  position: relative;
+}
+
+.logo_1280,
+.logo_768 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .logo_480,
+  .logo_1280 {
+    display: none;
+  }
+  .logo_768 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .logo_480,
+  .logo_768 {
+    display: none;
+  }
+  .logo_1280 {
+    display: block;
+  }
+  .logoLine::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 190px;
+    width: 1px;
+    height: 32px;
+    background-color: #e0e0e0;
+  }
+}
